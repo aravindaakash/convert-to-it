@@ -1,10 +1,9 @@
 {
   "name": "to-it",
   "main": "./lib/to-it",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "This package will convert the list of string to rspec it statements",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "to-it:toggle"
   },
@@ -13,6 +12,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
