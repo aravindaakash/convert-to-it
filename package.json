@@ -2,7 +2,7 @@
   "name": "FD-rspec-snippets",
   "main": "./lib/to-it",
   "version": "0.0.2",
-  "description": "This package will convert the list of string to rspec it statements",
+  "description": "This package provides rspec snippets and custom snippets",
   "keywords": [],
   "activationCommands": {
     "atom-workspace": "to-it:toggle"
