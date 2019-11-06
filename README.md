@@ -20,8 +20,8 @@ $ apm install FD-rspec-snippets
 
 ## Add a quick rspec snippets
 
- 1. To add spec template type `spec` and press enter
- 2. To add rspec it template type `sit` and press enter
+ 1. To add spec template type `spec` and press tab
+ 2. To add rspec it template type `sit` and press tab
 
 ![A Sample gif](https://media.giphy.com/media/ekAYJHMkNMmJQk3QNL/giphy.gif)
 
