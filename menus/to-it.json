@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Convert-to-it",
+        "command": "to-it:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "to-it",
+          "submenu": [
+            {
+              "label": "Convert-to-it",
+              "command": "to-it:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
