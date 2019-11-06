@@ -1,0 +1,37 @@
+'.source.ruby':
+  'Spec':
+    'prefix': 'spec'
+    'body': """
+      require 'spec_helper'
+
+      describe '$1', :feature => '$2' do
+
+        before(:all) do
+          @constants = Constants.new
+          @api = API.new(@constants.BASE_URL, @constants.ADMIN_EMAIL, @constants.COMMON_PASSWORD)
+        end
+
+        before(:each) do
+        end
+
+        after(:each) do |e|
+          attach_screenshot_on_exception(e)
+        end
+
+        after(:all) do |e|
+          attach_screenshot_on_exception(e)
+          @driver.quit_all
+        end
+
+      end
+    """
+  'Spec - it':
+    'prefix': 'sit'
+    'body': """
+      it '$1' do, :testId =>'$2', :story => '$3' do |e|
+        e.step '' do
+        end
+        e.step '' do
+        end
+      end
+    """
