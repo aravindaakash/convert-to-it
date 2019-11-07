@@ -28,7 +28,7 @@
   'Spec - it':
     'prefix': 'sit'
     'body': """
-      it '$1' do, :testId =>'$2', :story => '$3' do |e|
+      it '$1', :testId =>'$2', :story => '$3' do |e|
         e.step '' do
         end
         e.step '' do
@@ -41,3 +41,9 @@
       e.step '$1' do
       end
     """
+  'testId':
+    'prefix': 'te'
+    'body': """:testId =>'$1'"""
+  'Map step id':
+    'prefix': 'map'
+    'body': ":map_step_id => true"
