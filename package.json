@@ -7,7 +7,7 @@
   "activationCommands": {
     "atom-workspace": "to-it:toggle"
   },
-  "repository": "https://github.com/aravindaakash/FD-rspec-snippets",
+  "repository": "https://github.com/aravindaakash/convert-to-it",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
