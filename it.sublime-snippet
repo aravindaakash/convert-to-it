@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+  it '$1', testId: '$2', story: '$3' do |e|
+    e.step '' do
+    end
+    e.step '' do
+    end
+  end
+]]></content>
+  <tabTrigger>it</tabTrigger>
+</snippet>

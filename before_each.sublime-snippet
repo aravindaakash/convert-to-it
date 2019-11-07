@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+  before(:each) do |e|
+    @time_string = Time.now.strftime('%Y%m%d%H%M%S')
+  end
+]]></content>
+  <tabTrigger>before e</tabTrigger>
+</snippet>

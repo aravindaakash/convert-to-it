@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+  after(:all) do |e|
+    attach_screenshot_on_exception(e)
+    @driver.quit_all
+  end
+]]></content>
+  <tabTrigger>after a</tabTrigger>
+</snippet>

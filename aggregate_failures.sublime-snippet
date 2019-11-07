@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+  aggregate_failures '$1' do
+  end
+]]></content>
+  <tabTrigger>aggre</tabTrigger>
+</snippet>

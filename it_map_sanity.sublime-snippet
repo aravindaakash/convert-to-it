@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+  it '$1', map_step_id: true, sanity: true, story: '$2' do |e|
+    e.step '', testId: '' do
+    end
+    e.step '', testId: '' do
+    end
+  end
+]]></content>
+  <tabTrigger>it-ms</tabTrigger>
+</snippet>

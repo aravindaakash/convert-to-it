@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+  after(:each) do |e|
+    attach_screenshot_on_exception(e)
+  end
+]]></content>
+  <tabTrigger>after e</tabTrigger>
+</snippet>

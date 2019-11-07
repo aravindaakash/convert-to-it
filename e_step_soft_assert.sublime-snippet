@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+  e.step '$1', soft_assert: true do
+  end
+]]></content>
+  <tabTrigger>e.-s</tabTrigger>
+</snippet>

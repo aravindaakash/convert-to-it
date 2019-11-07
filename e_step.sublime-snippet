@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+  e.step '$1' do
+  end
+]]></content>
+  <tabTrigger>e.</tabTrigger>
+</snippet>

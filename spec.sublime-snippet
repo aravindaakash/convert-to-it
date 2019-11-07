@@ -2,7 +2,7 @@
 	<content><![CDATA[
 require 'spec_helper'
 
-describe '', :feature => '' do
+describe '', feature: '' do
 
   before(:all) do
     @constants = Constants.new
@@ -10,6 +10,7 @@ describe '', :feature => '' do
   end
 
   before(:each) do
+		@time_string = Time.now.strftime('%Y%m%d%H%M%S')
   end
 
   after(:each) do |e|

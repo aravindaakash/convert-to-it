@@ -4,14 +4,18 @@
     'body': """
       require 'spec_helper'
 
-      describe '$1', :feature => '$2' do
+      describe '$1', feature: '$2' do
 
         before(:all) do
+          @driver = Driver.new
           @constants = Constants.new
+          @freshdesk = Freshdesk.new(@driver)
+          @freshdesk.login(@constants.ADMIN_EMAIL, @constants.COMMON_PASSWORD, @constants.BASE_URL)
           @api = API.new(@constants.BASE_URL, @constants.ADMIN_EMAIL, @constants.COMMON_PASSWORD)
         end
 
         before(:each) do
+          @time_string = Time.now.strftime('%Y%m%d%H%M%S')
         end
 
         after(:each) do |e|
@@ -25,25 +29,110 @@
 
       end
     """
-  'Spec - it':
-    'prefix': 'sit'
+  'It':
+    'prefix': 'it'
     'body': """
-      it '$1', :testId =>'$2', :story => '$3' do |e|
+      it '$1', testId: '$2', story: '$3' do |e|
         e.step '' do
         end
         e.step '' do
         end
       end
     """
-  'e - step':
+  'It testId sanity':
+    'prefix': 'it-ts'
+    'body': """
+      it '$1', testId: '$2', sanity: true, story: '$3' do |e|
+        e.step '' do
+        end
+        e.step '' do
+        end
+      end
+    """
+  'It map_step_id':
+    'prefix': 'it-m'
+    'body': """
+      it '$1', map_step_id: true, story: '$2' do |e|
+        e.step '', testId: '' do
+        end
+        e.step '', testId: '' do
+        end
+      end
+    """
+  'It map_step_id sanity':
+      'prefix': 'it-ms'
+      'body': """
+        it '$1', map_step_id: true, sanity: true, story: '$2' do |e|
+          e.step '', testId: '' do
+          end
+          e.step '', testId: '' do
+          end
+        end
+      """
+  'e.step':
     'prefix': 'e.'
     'body': """
       e.step '$1' do
       end
     """
+  'e.step testId':
+    'prefix': 'e.-t'
+    'body': """
+      e.step '$1', testId: '$2' do
+      end
+    """
+  'e.step soft':
+    'prefix': 'e.-s'
+    'body': """
+      e.step '$1', soft_assert: true do
+      end
+    """
+  'e.step testId soft':
+    'prefix': 'e.-ts'
+    'body': """
+      e.step '$1', testId: '$2', soft_assert: true do
+      end
+    """
+  'before each':
+    'prefix': 'before e'
+    'body': """
+      before(:each) do |e|
+        @time_string = Time.now.strftime('%Y%m%d%H%M%S')
+      end
+    """
+  'before all':
+    'prefix': 'before a'
+    'body': """
+      before(:all) do |e|
+      end
+    """
+  'after all':
+    'prefix': 'after a'
+    'body': """
+      after(:all) do |e|
+        attach_screenshot_on_exception(e)
+        @driver.quit_all
+      end
+    """
+  'after each':
+    'prefix': 'after e'
+    'body': """
+      after(:each) do |e|
+        attach_screenshot_on_exception(e)
+      end
+    """
   'testId':
-    'prefix': 'te'
-    'body': """:testId =>'$1'"""
+    'prefix': 'test'
+    'body': "testId: '$1'"
   'Map step id':
     'prefix': 'map'
-    'body': ":map_step_id => true"
+    'body': "map_step_id: true"
+  'aggregate failures':
+    'prefix': 'aggre'
+    'body': """
+      aggregate_failures '$1' do
+      end
+    """
+  'time string':
+    'prefix': 'time'
+    'body': "@time_string = Time.now.strftime('%Y%m%d%H%M%S')"
