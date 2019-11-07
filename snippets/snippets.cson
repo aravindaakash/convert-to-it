@@ -35,9 +35,9 @@
         end
       end
     """
-    'e - step':
-      'prefix': 'e.'
-      'body': """
-        e.step '$1' do
-        end
-      """
+  'e - step':
+    'prefix': 'e.'
+    'body': """
+      e.step '$1' do
+      end
+    """
