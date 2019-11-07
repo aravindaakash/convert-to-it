@@ -50,7 +50,7 @@
  This package will convert the list of string to Rspec it statements
 
  Steps:
-  1. Select the text
+  1. Select the text 
   2. Use `cmd+shift+l` to Select each line
   3. Use keybinding `ctrl+alt+o` to convert to Rspec it statements
 
