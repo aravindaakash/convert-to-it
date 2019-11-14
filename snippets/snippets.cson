@@ -40,7 +40,7 @@
       end
     """
   'It testId sanity':
-    'prefix': 'it-ts'
+    'prefix': 'it-s'
     'body': """
       it '$1', testId: '$2', sanity: true, story: '$3' do |e|
         e.step '' do
