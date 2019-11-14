@@ -10,10 +10,9 @@
 
 #### Convert to rspec 'it' statements
   This package will convert the list of string to Rspec it statements
-
-  `Select the text -> Right click -> Convert to-it`
-          or
-  shortcutkey `ctrl+alt+o`
+  1. Select the text
+  2. Use `cmd+shift+l` to Select each line
+  3. Use keybinding `ctrl+alt+o` or `Right click -> Convert to-it` to convert to Rspec it statements
 
 ![A Sample gif](https://media.giphy.com/media/LOhbCpRocZhTM0R6fY/giphy.gif)
 
@@ -50,7 +49,7 @@
  This package will convert the list of string to Rspec it statements
 
  Steps:
-  1. Select the text 
+  1. Select the text
   2. Use `cmd+shift+l` to Select each line
   3. Use keybinding `ctrl+alt+o` to convert to Rspec it statements
 
