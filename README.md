@@ -14,7 +14,7 @@
   2. Use `cmd+shift+l` to Select each line
   3. Use keybinding `ctrl+alt+o` or `Right click -> Convert to-it` to convert to Rspec it statements
 
-![A Sample gif](https://media.giphy.com/media/LOhbCpRocZhTM0R6fY/giphy.gif)
+![A Sample gif](https://media.giphy.com/media/LOhbCpRocZhTM0R6fY/giphy.gif).  
 
 
 #### Add a quick rspec snippets
