@@ -12,7 +12,7 @@
   This package will convert the list of string to Rspec it statements
   1. Select the text
   2. Use `cmd+shift+l` to Select each line
-  3. Use keybinding `ctrl+alt+o` or `Right click -> Convert to-it` to convert to Rspec it statements
+  3. Use keybinding `ctrl+alt+o` or `Right click -> Convert to-it` to convert to Rspec it statementsc2323e
 
 ![A Sample gif](https://media.giphy.com/media/LOhbCpRocZhTM0R6fY/giphy.gif)
 
